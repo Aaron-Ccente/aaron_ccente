@@ -302,7 +302,7 @@ Mensaje enviado desde el portafolio web.
               <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-purple-600 rounded-full opacity-20 blur-xl"></div>
               <div className="relative w-full h-full bg-linear-to-br from-gray-800 to-gray-900 rounded-full border-4 border-gray-700 flex items-center justify-center">
                 <div className="text-center">
-                  <img src='/AaronPerfil.webp' width={80} height={80} className='rounded-full w-64 h-64 md:w-80 md:h-80 object-cover' alt="Juan Aarón Ccente Rojas"/>
+                  <img src='/perfil.webp' width={80} height={80} className='rounded-full w-64 h-64 md:w-80 md:h-80 object-cover' alt="Juan Aarón Ccente Rojas"/>
                 </div>
               </div>
             </div>

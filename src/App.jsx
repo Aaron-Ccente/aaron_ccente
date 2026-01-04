@@ -67,6 +67,17 @@ const Portfolio = () => {
       cliente: "Proyecto Fullstack - Personal",
       rol: "Desarrollador Frontend/Backend",
       imagen: "/vistapelis.webp"
+    },
+    {
+      id: 6,
+      titulo: "Consultora SudoLabs",
+      descripcion: "Sitio web corporativo desarrollado para SudoLabs, una consultora de software en crecimiento enfocada en brindar soluciones tecnológicas modernas. El proyecto se centró en una arquitectura frontend escalable, optimización SEO, alto rendimiento y una experiencia de usuario clara y profesional, orientada a la captación de clientes y presentación de servicios.",
+      tecnologias: ["Next.js", "Tailwind CSS", "Figma", "SEO", "Optimización Web"],
+      enlace: "https://www.sudolabs.space/",
+      fecha: "2025",
+      cliente: "SudoLabs",
+      rol: "Desarrollador Frontend",
+      imagen: "/sudolabs.webp"
     }
   ];
 
@@ -297,14 +308,21 @@ Mensaje enviado desde el portafolio web.
               </a>
             </div>
           </div>
-          <div className="md:w-1/2 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
-              <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-purple-600 rounded-full opacity-20 blur-xl"></div>
-              <div className="relative w-full h-full bg-linear-to-br from-gray-800 to-gray-900 rounded-full border-4 border-gray-700 flex items-center justify-center">
-                <div className="text-center">
-                  <img src='/perfil.webp' width={80} height={80} className='rounded-full w-64 h-64 md:w-80 md:h-80 object-cover' alt="Juan Aarón Ccente Rojas"/>
-                </div>
+          <div className="md:w-1/2 flex justify-center select-none">
+          <div className="relative w-64 h-64 md:w-80 md:h-80 pointer-events-none select-none">
+            <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-purple-600 rounded-full opacity-20 blur-xl pointer-events-none select-none"></div>
+            <div className="relative w-full h-full bg-linear-to-br from-gray-800 to-gray-900 rounded-full border-4 border-gray-700 flex items-center justify-center select-none">
+              <div className="text-center select-none">
+                <img
+                  src="/imagen-gif.gif"
+                  width={256}
+                  height={256}
+                  draggable="false"
+                  className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover select-none pointer-events-none"
+                  alt="Juan Aarón Ccente Rojas"
+                />
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -317,13 +335,23 @@ Mensaje enviado desde el portafolio web.
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {proyectos.map((proyecto) => (
-              <div key={proyecto.id} className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:-translate-y-1">
-                <div className="h-48 overflow-hidden">
+              <div key={proyecto.id} className="relative bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:-translate-y-1 select-none">
+                <div className="relative h-48 overflow-hidden group">
                   <img 
                     src={proyecto.imagen} 
                     alt={proyecto.titulo}
-                    className="w-full h-full object-cover"
+                    className="
+                      w-full h-full object-cover
+                      transition-transform duration-500
+                      group-hover:scale-110
+                    "
                   />
+                  <div className="
+                    absolute inset-0
+                    bg-black/0
+                    transition-colors duration-500
+                    group-hover:bg-black/50
+                  "></div>
                 </div>
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-2">

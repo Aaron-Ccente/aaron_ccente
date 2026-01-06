@@ -37,6 +37,17 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      titulo: "Servicio de mensajería con WebSockets y WhatsApp",
+      descripcion: "Plataforma de mensajería en tiempo real integrada con WhatsApp mediante WebSockets, permitiendo el envío y recepción instantánea de mensajes desde una interfaz web. El sistema incluye autenticación segura, gestión de sesiones con códigos QR, monitoreo del estado de conexión, y una API REST para la integración con sistemas externos. Diseñado para entornos empresariales, optimiza la comunicación con clientes y automatiza flujos de atención.",
+      tecnologias: ["React", "Node.js", "WebSockets", "CSS3", "WhatsApp", "REST API"],
+      enlace: "https://aaron-ccente.vercel.app/",
+      fecha: "Jul 2025 - Ago 2025",
+      cliente: "NEONHOUSELED SAC",
+      rol: "Desarrollador Frontend / Backend",
+      imagen: "/whatsApp-service.webp"
+    },
+    {
+      id: 4,
       titulo: "KoreanMania Huancayo - Página Web",
       descripcion: "Página web desarrollada con React.js y optimizada para máximo rendimiento. Resultados Lighthouse: 100 en Performance, Accessibility, Best Practices y SEO.",
       tecnologias: ["React", "Tailwind CSS", "Figma", "WebP", "Firebase Hosting"],
@@ -47,7 +58,7 @@ const Portfolio = () => {
       imagen: "/koreanmania.webp"
     },
     {
-      id: 4,
+      id: 5,
       titulo: "Sistema de Inventario - OFICRI Huancayo",
       descripcion: "Sistema de inventario desarrollado con React.js y Node.js, optimizada para realizar consultas instantáneas, con validaciones en el frontend y backend para evitar errores de digitación.",
       tecnologias: ["React", "Tailwind CSS", "Figma", "Node", "MySQL"],
@@ -58,7 +69,7 @@ const Portfolio = () => {
       imagen: "/inventario.webp"
     },
     {
-      id: 5,
+      id: 6,
       titulo: "Sistema de Películas - PELISUNCP",
       descripcion: "Sistema que muestra dinámicamente peliculas creadas por un usuario con rol de administrador. Utilicé PROCEDIMIENTOS ALMACENADOS en MySQL e integración con backend en Node.js y React con tailwindcss para el frontend.",
       tecnologias: ["React", "Tailwind CSS", "Figma", "Node", "MySQL", "Procedimientos Almacenados"],
@@ -69,7 +80,7 @@ const Portfolio = () => {
       imagen: "/vistapelis.webp"
     },
     {
-      id: 6,
+      id: 7,
       titulo: "Consultora SudoLabs",
       descripcion: "Sitio web corporativo desarrollado para SudoLabs, una consultora de software en crecimiento enfocada en brindar soluciones tecnológicas modernas. El proyecto se centró en una arquitectura frontend escalable, optimización SEO, alto rendimiento y una experiencia de usuario clara y profesional, orientada a la captación de clientes y presentación de servicios.",
       tecnologias: ["Next.js", "Tailwind CSS", "Figma", "SEO", "Optimización Web"],

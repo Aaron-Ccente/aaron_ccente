@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaServer, FaDatabase, FaCloud, FaBars, FaTimes, FaFigma, FaLaravel, FaReact, FaNodeJs, FaWhatsapp } from 'react-icons/fa';
+import { useState } from 'react';
+import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaServer, FaDatabase, FaBars, FaTimes, FaLaravel, FaReact, FaNodeJs, FaWhatsapp, FaFilePdf } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss } from 'react-icons/si';
 
 const Portfolio = () => {
@@ -161,6 +161,15 @@ const Portfolio = () => {
     fecha: ""
   };
 
+const handleDownloadCV = () => {
+  const link = document.createElement("a");
+  link.href = "/CV_CCENTE ROJAS JUAN AARON.pdf";
+  link.download = "Aaron_CV.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId);
     setNavOpen(false);
@@ -210,7 +219,7 @@ Mensaje enviado desde el portafolio web.
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-gray-900 to-gray-800 text-white">
+    <div className="relative min-h-screen bg-linear-to-br from-gray-900 to-gray-800 text-white">
       {/* Navegación */}
       <nav className="fixed top-0 w-full bg-gray-900/90 backdrop-blur-sm z-50 border-b border-gray-700">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -261,6 +270,12 @@ Mensaje enviado desde el portafolio web.
           </div>
         )}
       </nav>
+      
+      {/* Boton para descarga CV */}
+      <button className='fixed top-20 right-20 px-6 py-4 rounded-lg bg-blue-600 hover:bg-blue-700 z-50 hover:cursor-pointer flex justify-center items-center gap-2' onClick={handleDownloadCV}>
+          <FaFilePdf/>
+          <span>Descargar CV</span>
+      </button>
 
       {/* Sección de Inicio */}
       <section id="inicio" className="pt-24 pb-16 px-4 container mx-auto">

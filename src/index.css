@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+:root{
+    --background-button: #fdfdfd;
+    --button-text-theme: #0e0e22;
+}
+
+.dark{
+    --background-button: #3f3838;
+    --button-text-theme: #ece917;
+}
+
+.button-theme{
+    padding: 6px 8px;
+    border-radius: 14px;
+}
+
+@theme {
+    --color-button-theme: var(--background-button);
+    --color-button-text-theme: var(--background-button-text-theme);
+}

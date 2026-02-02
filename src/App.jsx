@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaServer, FaDatabase, FaBars, FaTimes, FaLaravel, FaReact, FaNodeJs, FaWhatsapp, FaFilePdf } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss } from 'react-icons/si';
+import Theme from './components/Theme';
 
 const Portfolio = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -242,6 +243,7 @@ Mensaje enviado desde el portafolio web.
                 {item}
               </button>
             ))}
+            <Theme/>
           </div>
           
           {/* Botón menú móvil */}

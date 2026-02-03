@@ -1,13 +1,41 @@
 @import "tailwindcss";
 
 :root{
-    --background-button: #fdfdfd;
+    /* Colores para fondos */
+    --background-button: #f5f5f5;
+    --bg-linear-background-left: #111827;
+    --bg-linear-background-right: #1F2937;
+    /* Colores para textos */
+    --text-primary: #fdfdfd;
+    --text-blue: #60A5FA;
+    --text-green: #4ADE80;
+    --text-red: #F87171;
+    --text-description: #D1D5DB;
+    /* Colores para botones */
     --button-text-theme: #0e0e22;
+    --button-blue: #60A5FA;
+    --button-blue-hover: #327ad2;
+    /* Colores para los border */
+    --border-blue: #60A5FA;
 }
 
 .dark{
-    --background-button: #3f3838;
-    --button-text-theme: #ece917;
+    /* Colores para fondos */
+    --background-button: #f5f5f5;
+    --bg-linear-background-left: #F9FAFB;
+    --bg-linear-background-right: #E5E7EB;
+    /* Colores para textos */
+    --text-primary: #0e0e22;
+    --text-blue: #2563EB;
+    --text-green: #16A34A;
+    --text-red: #DC2626;
+    --text-description: #0e0e22;
+    /* Colores para botones */
+    --button-text-theme: #0e0e22;
+    --button-blue: #2563EB;
+    --button-blue-hover: #1a4fc1;
+    /* Colores para los border */
+    --border-blue: #2563EB;
 }
 
 .button-theme{
@@ -16,6 +44,20 @@
 }
 
 @theme {
+    /* Colores para textos */
+    --color-text-primary: var(--text-primary);
+    --color-text-blue: var(--text-blue);
+    --color-text-green: var(--text-green);
+    --color-text-red: var(--text-red);
+    --color-text-description: var(--text-description);
+    /* Colores para fondos */
+    --color-bg-linear-background-left: var(--bg-linear-background-left);
+    --color-bg-linear-background-right: var(--bg-linear-background-right);
+    /* Colores para botones */
     --color-button-theme: var(--background-button);
     --color-button-text-theme: var(--background-button-text-theme);
+    --color-button-blue: var(--button-blue);
+    --color-button-blue-hover: var(--button-blue-hover);
+    /* Colores para los border */
+    --color--border-blue: var(--border-blue);
 }

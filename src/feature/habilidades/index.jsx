@@ -4,7 +4,7 @@ export default function Habilidades() {
   return (
     <section id="habilidades" className="py-16 px-4 container mx-auto">
       <h2 className="text-3xl font-bold text-center mb-12">
-        Mis <span className="text-blue-400">Habilidades</span>
+        Mis <span className="text-text-blue">Habilidades</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -14,7 +14,7 @@ export default function Habilidades() {
             className="bg-gray-800 p-6 rounded-xl border border-gray-700"
           >
             <div className="flex items-center mb-4">
-              <div className="text-2xl text-blue-400 mr-3">
+              <div className="text-2xl text-text-blue mr-3">
                 {habilidad.icono}
               </div>
               <h3 className="text-xl font-bold">{habilidad.nombre}</h3>
@@ -47,7 +47,7 @@ export default function Habilidades() {
       {/* Habilidades Blandas */}
       <div className="bg-gray-800 p-6 rounded-xl border border-gray-700">
         <h3 className="text-2xl font-bold mb-6 text-center">
-          Habilidades <span className="text-blue-400">Blandas</span>
+          Habilidades <span className="text-text-blue">Blandas</span>
         </h3>
         <div className="flex flex-wrap justify-center gap-4">
           {habilidadesBlandas.map((habilidad, index) => (
@@ -55,7 +55,7 @@ export default function Habilidades() {
               key={index}
               className="flex items-center bg-gray-700 px-4 py-3 rounded-lg"
             >
-              <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
+              <div className="w-2 h-2 bg-text-green rounded-full mr-3"></div>
               <span>{habilidad}</span>
             </div>
           ))}

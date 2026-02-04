@@ -20,9 +20,9 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full bg-gray-900/90 backdrop-blur-sm z-50 border-b border-gray-700">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="text-2xl font-bold">
-          <span className="text-blue-400">&lt;</span>
+          <span className="text-text-blue">&lt;</span>
           <span className="text-white">Aaron</span>
-          <span className="text-blue-400">Dev/&gt;</span>
+          <span className="text-text-blue">Dev/&gt;</span>
         </div>
 
         {/* Navegación para desktop */}
@@ -37,9 +37,9 @@ export default function Navbar() {
             <button
               key={item}
               onClick={() => scrollToSection(item)}
-              className={`capitalize hover:text-blue-400 transition-colors ${
+              className={`capitalize hover:text-text-blue transition-colors ${
                 activeSection === item
-                  ? "text-blue-400 border-b-2 border-blue-400"
+                  ? "text-text-blue border-b-2 border-border-blue"
                   : ""
               }`}
             >
@@ -72,7 +72,7 @@ export default function Navbar() {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="capitalize text-left py-2 hover:text-blue-400 transition-colors"
+                className="capitalize text-left py-2 hover:text-text-blue transition-colors"
               >
                 {item}
               </button>

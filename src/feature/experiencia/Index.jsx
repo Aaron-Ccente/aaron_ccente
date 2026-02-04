@@ -6,7 +6,7 @@ export default function Experiencia() {
     <section id="experiencia" className="py-16 px-4 bg-gray-800/50">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">
-          Experiencia <span className="text-blue-400">& Educación</span>
+          Experiencia <span className="text-text-blue">& Educación</span>
         </h2>
 
         <div className="max-w-4xl mx-auto">
@@ -21,7 +21,7 @@ export default function Experiencia() {
               <div className="bg-gray-800 p-6 rounded-xl border border-gray-700">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                   <h3 className="text-xl font-bold">{exp.puesto}</h3>
-                  <span className="text-blue-400 font-medium">{exp.año}</span>
+                  <span className="text-text-blue font-medium">{exp.año}</span>
                 </div>
                 <p className="text-gray-300 font-medium mb-3">{exp.empresa}</p>
                 <p className="text-gray-400 mb-4">{exp.descripcion}</p>
